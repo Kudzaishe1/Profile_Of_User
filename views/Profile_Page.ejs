@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+
+<head>
+    <link href="/assets/profile.css" rel="stylesheet" >
+    <script src="/assets/SignUp_Validation.js"></script>
+</head>
+
+<body>
+    <form class="Profile" method="post">
+        <label for="Name">First Name</label>
+        <input type="text" name="Name" value='<%- Name %>'>
+
+        <label for="Surname">Last Name</label>
+        <input type="text" name="Surname" value='<%-Surname %>'>
+
+        <label for="Age">Age</label>
+        <input type="number" name="Age" value=<%- Age %>>
+
+        <label for="Degree">Degree</label>
+        <input type="text" name="Degree" value='<%- Degree%>'>
+
+        <label for="Favourite_Course">Favourite Course</label>
+        <input type="text" name="FavouriteCourse" value='<%-FavouriteCourse%>'>
+
+  <input type="submit" value="Submit" onclick="Update()">
+
+  <input type="button" value="Log Out" onclick="window.location.href='/Sign_In'">
+
+</form>
+
+</body>
